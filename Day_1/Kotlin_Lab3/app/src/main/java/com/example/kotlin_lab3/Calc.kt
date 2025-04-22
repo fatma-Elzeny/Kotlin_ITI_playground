@@ -13,15 +13,16 @@ fun main() {
     if (num1 == null || num2 == null || operator.isNullOrBlank()) {
         println("Invalid input.")
         return
-    }
+    } else {
 
-    val result = when (operator) {
-        "+" -> num1 + num2
-        "-" -> num1 - num2
-        "*" -> num1 * num2
-        "/" -> if (num2 != 0.0) num1 / num2 else "Cannot divide by zero"
-        else -> "Unknown operator"
-    }
+        val result = when (operator) {
+            "+" -> num1 + num2
+            "-" -> num1 - num2
+            "*" -> num1 * num2
+            "/" -> if (num2 != 0.0) num1 / num2 else "Cannot divide by zero"
+            else -> "Unknown operator"
+        }
 
-    println("Result: $result")
+        println("Result: $result")
+    }
 }
