@@ -1,7 +1,7 @@
 package com.example.kotlin_lab4
 
 fun main(){
-   val rows =6
+   val rows =10
 
    for (i in 0 until rows) {
        for (j in 0..3 * rows) {
